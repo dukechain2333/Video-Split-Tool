@@ -2,15 +2,15 @@
 
 ![](https://img.shields.io/badge/dependencies-python3.7-blue)
 
-##Introduction
+## Introduction
 This is a small tool for video cropping which will separate the original video into frame images
 
-##Requirements
+## Requirements
 ```bash
 $ pip install -r requirements.txt
 ```
 
-##Usage
+## Usage
 Use `--help` to get information about arguments
 ```bash
 $ python Split.py --help
