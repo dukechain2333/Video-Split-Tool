@@ -46,7 +46,7 @@ class VideoSplit:
                 imgCounter += 1
             frameCounter += 1
 
-        print(str(imgCounter) + 'frame images was saved!')
+        print(str(imgCounter) + ' frame images was saved!')
 
     def showResolution(self):
         """
