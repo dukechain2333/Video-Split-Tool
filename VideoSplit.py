@@ -39,7 +39,9 @@ class VideoSplit:
                 print('saving frame:%s' % frameCounter)
                 im_pil = cv2.cvtColor(frame_lwpCV, cv2.COLOR_BGR2RGB)
                 im_new = Image.fromarray(im_pil)
-                savePath = self.targetPath + '\\%s.jpg' % frameCounter
+                sourceName = os.path.basename(self.sourcePath)
+                sourceName = sourceName.split('.')
+                savePath = self.targetPath + '\\%s%s.jpg' % (sourceName[0], frameCounter)
                 im_new.save(savePath)
                 imgCounter += 1
             frameCounter += 1
